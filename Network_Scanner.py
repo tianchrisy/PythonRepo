@@ -13,3 +13,5 @@ def scan_network(ip_range):
 
     for sent, received in answered:
         print ("Device found: {received.psrc} - {received.hwsrc}")
+
+
