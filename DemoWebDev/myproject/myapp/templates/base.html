@@ -12,7 +12,19 @@
     </style>
 </head>
 <body>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'home' %}">My Django App</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About Us</a>  <!-- Link to About Page -->
+                </li>
+            </ul>
+        </div>
+    </nav>
     <header>
         <h1>My Django Website</h1>
     </header>
@@ -26,4 +38,5 @@
     </footer>
 
 </body>
+
 </html>
